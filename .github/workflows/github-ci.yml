@@ -12,5 +12,7 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
+      - name: Unit Tests
+        run: npm test
       - name: build and prod
         run: npm run build  
