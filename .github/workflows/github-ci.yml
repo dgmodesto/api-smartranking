@@ -1,8 +1,8 @@
-name: Lint and Test
+name: Lints and Tests
 on: push
 jobs:
   build:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
       - name: Project checkout
         uses: actions/checkout@v1
@@ -14,4 +14,4 @@ jobs:
         run: npm run Lint
       - name: Build and Prod
         run: npm run build
-        
+
