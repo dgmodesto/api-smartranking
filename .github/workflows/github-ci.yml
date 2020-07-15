@@ -1,0 +1,17 @@
+name: Lint and Test
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-lates
+    steps:
+      - name: Project checkout
+        uses: actions/checkout@v1
+      - name: Node.js setup
+        uses: actions/setup-node@1.1.0
+      - name: Instalation of dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run Lint
+      - name: Build and Prod
+        run: npm run build
+        
