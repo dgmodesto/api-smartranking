@@ -3,7 +3,7 @@ version: '3'
 services:
   app:
     build: .
-    container_name: api-smartranking-container
+    container_name: smartranking-container-app
     entrypoint: ./.docker/entrypoint.sh
     ports:
       - 8000:8000
