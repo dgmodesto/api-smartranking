@@ -1,4 +1,4 @@
-name: Lints and Tests
+name: Lint and tests
 on: push
 jobs:
   build:
@@ -7,11 +7,10 @@ jobs:
       - name: Project checkout
         uses: actions/checkout@v1
       - name: Node.js setup
-        uses: actions/setup-node@1.1.0
-      - name: Instalation of dependencies
+        uses: actions/setup-node@v1.1.0
+      - name: Installation of dependencies
         run: npm ci
       - name: Lint
-        run: npm run Lint
-      - name: Build and Prod
-        run: npm run build
-
+        run: npm run lint
+      - name: build and prod
+        run: npm run build  
